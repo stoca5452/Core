@@ -1,0 +1,48 @@
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <!-- <add name="default" connectionString="Data Source=ODA11; User Id=BSUD"/> -->
+      <MSQLConnectionParameters>
+        <User>SA</User>
+        <Password>admin01</Password>
+        <SeverName>DIARCOP001-BK</SeverName>
+        <DataBase>DIARCOP</DataBase>
+        <TypeAuthentication>True</TypeAuthentication>
+      </MSQLConnectionParameters>
+      <OracleConnectionParameters>
+        <User>XX</User>
+        <Password>zz</Password>
+        <Source>XX</Source>
+        <DataBase>XX</DataBase>
+      </OracleConnectionParameters>
+    </connectionStrings>
+    <applicationSettings>
+        <AssembliesSettings path="C:\Usuario\svn\Clientes\Macro\Productos\SmartOpen.NET\branches\develop\references">
+            <assemblies>
+
+            </assemblies>
+        </AssembliesSettings>
+        <AppliacationErrors>
+          <ErrorSettings>
+            <IsLogError>true</IsLogError>
+            <Pathlog>C:\David\Github\Core\Core de STOCA\references</Pathlog>
+            <FileName>POnline</FileName>
+          </ErrorSettings>
+        </AppliacationErrors>
+        <FactorySettings>
+          <Factories>
+            <ApplicationID>POnline</ApplicationID>
+            <ConnectionType>MSSQL</ConnectionType> <!--Para Oracle -->
+          </Factories>
+        </FactorySettings>
+        <CustomSettings>
+          <Settings>
+            <Password>Fs6bKOND</Password>
+            <Encrypted>false</Encrypted>
+            <add name="SuperAccess.URL" value="http://tqarwswsvn46/saservice/saservice.asp" />
+            <Cobis.ApplicationID>28</Cobis.ApplicationID>
+          </Settings>
+        </CustomSettings>
+    </applicationSettings>
+</configuration>

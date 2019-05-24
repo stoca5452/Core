@@ -1,0 +1,271 @@
+<!--
+Para utilizar remoting:
+Cliente:
+1) Borrar sección configuration->configSections->DataAccessSettings
+2) Borrar sección configuration->connectionStrings
+3) Borrar sección configuration->FactorySettings->factories-> lo que está debajo del comentario "sin remoting"
+Server:
+1) Borrar sección configuration->FactorySettings->factories-> lo que está debajo del comentario "utilización de remoting"
+-->
+<configuration>
+    <configSections>
+        <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="AssembliesSettings" type="Crediware.Configuration.AssembliesSettings, Crediware.Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+            <section name="DataAccessSettings" type="Crediware.DataAccess.Configuration.DataAccessSettings, Crediware.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+            <section name="FactorySettings" type="Crediware.Configuration.FactorySettings, Crediware.Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+            <section name="RemotingSettings" type="Crediware.Transport.Remoting.Configuration.RemotingSettings, Crediware.Transport.Remoting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+            <section name="CustomSettings" type="Crediware.Configuration.CustomSettingsSection, Crediware.Configuration, Version=1.0.0.3, Culture=neutral, PublicKeyToken=null" />
+        </sectionGroup>
+    </configSections>
+    <connectionStrings>
+        <add name="default" connectionString="Data Source=ODA11; User Id=BSUD"/>
+        <!--<add name="default" connectionString="Data Source=ODA11; User Id=BSUDIMPLE"/>-->
+    </connectionStrings>
+    <applicationSettings>
+        <AssembliesSettings path="C:\Usuario\svn\Clientes\Macro\Productos\SmartOpen.NET\branches\develop\references">
+            <assemblies>
+                <!-- DataAccess -->
+                <add name="DataAccess.Factory" assembly="Crediware.DataAccess" type="Crediware.DataAccess.Factory" description="Implementa Crediware.DataAccess.IDataAccessFactory"/>
+                <add name="DataAccess.ConnectionParameters" assembly="Crediware.DataAccess" type="Crediware.DataAccess.StdConnectionParams" description=""/>
+                <add name="DataAccess.Connection" assembly="Oracle.DataAccess" type="Oracle.DataAccess.Client.OracleConnection" description="Implementa System.Data.IDBConnection"/>
+                <add name="DataAccess.Command" assembly="Oracle.DataAccess" type="Oracle.DataAccess.Client.OracleCommand" description="Implementa System.Data.IDBCommand"/>
+                <add name="DataAccess.Adapter" assembly="Oracle.DataAccess" type="Oracle.DataAccess.Client.OracleDataAdapter" description="Implementa System.Data.IDBDataAdapter"/>
+                <add name="DataAccess.InternalConnection" assembly="Crediware.DataAccess.Oracle" type="Crediware.DataAccess.Oracle.OracleConnection" description="Implementa Crediware.DataAccess.IConnection"/>
+                <add name="DataAccess.InternalTransactConnection" assembly="Crediware.DataAccess.Oracle" type="Crediware.DataAccess.Oracle.OracleTransactConnection" description="Implementa Crediware.DataAccess.ITransactConnection"/>
+                <!-- End of DataAccess -->
+
+                <!-- SmartOpen Common -->
+                <add name="SmartOpen.Common.Factory" assembly="SmartOpen.Core.BusinessRules.Implementation.dll" type="SmartOpen.Core.BusinessRules.Implementation.SOFactory" description="factory common de SmartOpen"/>
+                <add name="SmartOpen.Common.Remote" assembly="SmartOpen.Core.BusinessRules.Remoting.dll" uri="tcp://localhost:10081/smartopen_common.rem" type="SmartOpen.Core.BusinessRules.Remoting.SOFactoryRemoteProxy" description="proxy de remoting del factory common de SmartOpen"/>
+                <add name="SmartOpen.Common.Resources" assembly="SmartOpen.Core.Common.Resources.dll" type="SmartOpen.Core.Common.Resources.SmartOpenCommonResources" description="archivo de resources de SmartOpen"/>
+                <add name="SmartOpen.Custom.Resources" assembly="SmartOpen.Custom.Resources.dll" type="SmartOpen.Custom.Resources.SmartOpenResources" description="archivo de resources personalizados de SmartOpen"/>
+                <!-- End of SmartOpen Common -->
+
+                <!-- SmartOpen Plasticos -->
+                <add name="SmartOpen.Plasticos.Factory" assembly="SmartOpen.Core.Plasticos.BusinessRules.Implementation.dll" type="SmartOpen.Core.Plasticos.BusinessRules.Implementation.PlasticosFactory" description="factory de plásticos"/>
+                <add name="SmartOpen.Plasticos.Remote" assembly="SmartOpen.Core.Plasticos.BusinessRules.Remoting.dll" uri="tcp://localhost:10081/smartopen_plasticos.rem" type="SmartOpen.Core.Plasticos.BusinessRules.Remoting.PlasticosFactoryRemoteProxy" description="proxy de remoting del factory de plásticos"/>
+                <!-- End of SmartOpen Plasticos -->
+
+                <!-- SmartOpen Promociones -->
+                <add name="SmartOpen.Promociones.Factory" assembly="SmartOpen.Core.Promociones.BusinessRules.Implementation.dll" type="SmartOpen.Core.Promociones.BusinessRules.Implementation.PromocionesFactory" description="factory de promociones"/>
+                <add name="SmartOpen.Promociones.Remote" assembly="SmartOpen.Core.Promociones.BusinessRules.Remoting.dll" uri="tcp://localhost:10081/smartopen_promociones.rem" type="SmartOpen.Core.Promociones.BusinessRules.Remoting.PromocionesFactoryRemoteProxy" description="proxy de remoting del factory de promociones"/>
+                <!-- End of SmartOpen Promociones -->
+
+                <!-- SmartOpen PromoXPuntos -->
+                <add name="SmartOpen.PromoXPuntos.Factory" assembly="SmartOpen.Core.PromoXPuntos.BusinessRules.Implement.dll" type="SmartOpen.Core.PromoXPuntos.BusinessRules.Implement.PromoXPuntosFactory" description="factory de PromoXPuntos"/>
+                <!--<add name="SmartOpen.Promociones.Remote" assembly="SmartOpen.Core.Promociones.BusinessRules.Remoting.dll" uri="tcp://localhost:10081/smartopen_promociones.rem" type="SmartOpen.Core.Promociones.BusinessRules.Remoting.PromocionesFactoryRemoteProxy" description="proxy de remoting del factory de promociones"/>-->
+                <!-- End of SmartOpen PromoXPuntos -->
+
+                
+                <!-- SmartOpen Bajas -->
+                <add name="SmartOpen.Bajas.Factory" assembly="SmartOpen.Core.Bajas.BusinessRules.Implementation.dll" type="SmartOpen.Core.Bajas.BusinessRules.Implementation.BajasFactory" description="factory de Bajas"/>
+                <add name="SmartOpen.Bajas.Remote" assembly="SmartOpen.Core.Bajas.BusinessRules.Remoting.dll" uri="tcp://localhost:10081/smartopen_Bajas.rem" type="SmartOpen.Core.Bajas.BusinessRules.Remoting.BajasFactoryRemoteProxy" description="proxy de remoting del factory de Bajas"/>
+                <!-- End of SmartOpen Bajas -->
+
+                <!-- SmartOpen Comercios -->
+                <add name="SmartOpen.Comercios.Factory" assembly="SmartOpen.Core.Comercios.BusinessRules.Implementation.dll" type="SmartOpen.Core.Comercios.BusinessRules.Implementation.ComerciosFactory" description="factory de Comercios"/>
+            <!--    <add name="SmartOpen.Comercios.Remote" assembly="SmartOpen.Core.Comercios.BusinessRules.Remoting.dll" uri="tcp://localhost:10081/smartopen_comercios.rem" type="SmartOpen.Core.Comercios.BusinessRules.Remoting.ComerciosFactoryRemoteProxy" description="proxy de remoting del factory de Comercios"/>-->
+                <!-- End of SmartOpen Comercios -->
+
+                <!-- SmartOpen Tablas -->
+                <add name="SmartOpen.Tablas.Factory" assembly="SmartOpen.Core.Tablas.BusinessRules.Implementation.dll" type="SmartOpen.Core.Tablas.BusinessRules.Implementation.TablasFactory" description="factory de tablas"/>
+                <add name="SmartOpen.Tablas.Remote" assembly="SmartOpen.Core.Tablas.BusinessRules.Remoting.dll" uri="tcp://localhost:10081/smartopen_tablas.rem" type="SmartOpen.Core.Tablas.BusinessRules.Remoting.TablasFactoryRemoteProxy" description="proxy de remoting del factory de tablas"/>
+                <!-- End of SmartOpen Tablas -->
+
+                <!-- SmartOpen Contabilidad -->
+                <add name="SmartOpen.Contabilidad.Factory" assembly="SmartOpen.Core.Contabilidad.BusinessRules.Implementation.dll" type="SmartOpen.Core.Contabilidad.BusinessRules.Implementation.ContabilidadFactory" description="factory de contabilidad"/>
+                <add name="SmartOpen.Contabilidad.Remote" assembly="SmartOpen.Core.Contabilidad.BusinessRules.Remoting.dll" uri="tcp://localhost:10081/smartopen_contabilidad.rem" type="SmartOpen.Core.Contabilidad.BusinessRules.Remoting.ContabilidadFactoryRemoteProxy" description="proxy de remoting del factory de contabilidad"/>
+                <!-- End of SmartOpen Contabilidad -->
+
+
+                <!-- SmartOpen Conciliacion -->
+                <add name="SmartOpen.Conciliacion.Factory" assembly="SmartOpen.Core.Conciliacion.BusinessRules.Implementation.dll" type="SmartOpen.Core.Conciliacion.BusinessRules.Implementation.ConciliacionFactory" description="factory de conciliacion"/>
+                <add name="SmartOpen.Conciliacion.Remote" assembly="SmartOpen.Core.Conciliacion.BusinessRules.Remoting.dll" uri="tcp://localhost:10081/smartopen_conciliacion.rem" type="SmartOpen.Core.Conciliacion.BusinessRules.Remoting.ConciliacionFactoryRemoteProxy" description="proxy de remoting del factory de conciliacion"/>
+                <!-- End of SmartOpen Conciliacion -->
+
+                <!-- Crediware Crediware.BusinessRules.Implementation.Factory -->
+                <add name="BusinessRules.Factory" assembly="Crediware.BusinessRules.Implementation.dll" type="Crediware.BusinessRules.Implementation.Factory" description="Implementa Crediware.BusinessRules.ICrediwareFactory"/>
+                <add name="BusinessRules.Factory.Remote" assembly="Crediware.BusinessRules.Remoting.dll" uri="tcp://localhost:10080/crediware_br_entities.rem" type="Crediware.BusinessRules.Remoting.FactoryRemoteProxy" description="Implementa Crediware.BusinessRules.ICrediwareFactory"/>
+                <!-- End of Crediware.BusinessRules.Implementation.Factory -->
+
+        <!-- Crediware Crediware.Security.Implementation.FactoryV2 -->
+        <add name="Security.Factory" assembly="Crediware.Security.Implementation.dll" type="Crediware.Security.Implementation.FactoryV2" description="Implementa Crediware.Security.ISecurity"/>
+        <add name="Security.Factory.Remote" assembly="Crediware.Security.Transport.Remoting.dll" type="Crediware.Security.Transport.Remoting.Factory" uri="tcp://localhost:10080/security_factory.rem" description="Implementa Crediware.Security.ISecurity"/>
+        <!-- End of Crediware.Security.Implementation.FactoryV2 -->
+
+                <!-- Crediware Crediware.BusinessRules.Implementation.BasketManager -->
+                <add name="Crediware.Host.Basket" assembly="Crediware.BusinessRules.Implementation.dll" type="Crediware.BusinessRules.Implementation.BasketManager" description="Hosting: CrediwareBasketManager" />
+                <add name="Crediware.BusinessRules.Basket.Remote" assembly="Crediware.BusinessRules.Remoting.dll" uri="tcp://localhost:10080/crediware_br_basket.rem" type="Crediware.BusinessRules.Remoting.BasketManagerRemoteProxy" />
+                <!-- End of Crediware.BusinessRules.Implementation.BasketManager -->
+
+
+                <!--
+        accounts        
+        -->
+
+                <!-- Crediware Crediware.BusinessRules.Implementation.CrediwareAlerts -->
+                <add name="Crediware.Host.Alerts" assembly="Crediware.BusinessRules.Implementation.dll" type="Crediware.BusinessRules.Implementation.CrediwareAlerts" description="Hosting: CrediwareAlerts" />
+                <add name="Crediware.BusinessRules.Alerts.Remote" assembly="Crediware.BusinessRules.Remoting.dll" uri="tcp://localhost:10080/crediware_br_alerts.rem" type="Crediware.BusinessRules.Remoting.CrediwareAlertsRemoteProxy" />
+                <!-- End of Crediware.BusinessRules.Implementation.CrediwareAlerts -->
+
+                <!--
+        customers
+        -->
+        <!--        <add name="SmartOpen.Comercios.Macro" assembly="SmartOpen.Macro.Comercios.dll" type="SmartOpen.Macro.Comercios.CustomFactory" description="factory de Comercios"/>-->
+                <add name="SmartOpen.Socios.Columbia" assembly="SmartOpen.Columbia.Socios.dll" type="SmartOpen.Columbia.Socios.CustomFactory" description="factory de socios"/>
+
+                <!--
+        Crediware
+        -->
+                <!-- Crediware.BusinessRules.Implementation.CrediwareEntities -->
+                <add name="Crediware.Host.Emails" assembly="Crediware.BusinessRules.Implementation.dll" type="Crediware.BusinessRules.Implementation.CrediwareEmails" description="Hosting: CrediwareEmails" />
+                <add name="Crediware.BusinessRules.Emails.Remote" assembly="Crediware.BusinessRules.Remoting.dll" uri="tcp://localhost:10080/crediware_br_emails.rem" type="Crediware.BusinessRules.Remoting.CrediwareEmailsRemoteProxy" />
+                <!-- End of Crediware.BusinessRules.Implementation.CrediwareEntities -->
+
+                <!-- Crediware.BusinessRules.Implementation.CrediwareEntities -->
+                <add name="Crediware.Host.Entities" assembly="Crediware.BusinessRules.Implementation.dll" type="Crediware.BusinessRules.Implementation.CrediwareEntities" description="Hosting: CrediwareEntities" />
+                <add name="Crediware.BusinessRules.Entities.Remote" assembly="Crediware.BusinessRules.Remoting.dll" uri="tcp://localhost:10080/crediware_br_entities.rem" type="Crediware.BusinessRules.Remoting.CrediwareEntitiesRemoteProxy" />
+                <!-- End of Crediware.BusinessRules.Implementation.CrediwareEntities -->
+
+                <!-- Crediware.BusinessRules.Implementation.CrediwareFacilities -->
+                <add name="Crediware.Host.Facilities" assembly="Crediware.BusinessRules.Implementation.dll" type="Crediware.BusinessRules.Implementation.CrediwareFacilities" description="Hosting: Facilities" />
+                <add name="Crediware.BusinessRules.Facilities.Remote" assembly="Crediware.BusinessRules.Remoting.dll" uri="tcp://localhost:10080/crediware_br_facilities.rem" type="Crediware.BusinessRules.Remoting.CrediwareFacilitiesRemoteProxy" />
+                <!-- End of Crediware.BusinessRules.Implementation.CrediwareFacilities -->
+
+                <!-- Crediware.BusinessRules.Implementation.CrediwareMessages -->
+                <add name="Crediware.Host.Messages" assembly="Crediware.BusinessRules.Implementation.dll" type="Crediware.BusinessRules.Implementation.CrediwareMessages" description="Hosting: CrediwareMessages" />
+                <add name="Crediware.BusinessRules.Messages.Remote" assembly="Crediware.BusinessRules.Remoting.dll" uri="tcp://localhost:10080/crediware_br_messages.rem" type="Crediware.BusinessRules.Remoting.CrediwareMessagesRemoteProxy" />
+                <!-- End of Crediware.BusinessRules.Implementation.CrediwareMessages -->
+
+                <!-- Crediware.BusinessRules.Implementation.CrediwareSecurity -->
+                <add name="Crediware.Host.Security" assembly="Crediware.BusinessRules.Implementation.dll" type="Crediware.BusinessRules.Implementation.CrediwareSecurity" description="Hosting: Security" />
+                <add name="Crediware.BusinessRules.Security.Remote" assembly="Crediware.BusinessRules.Remoting.dll" uri="tcp://localhost:10080/crediware_br_security.rem" type="Crediware.BusinessRules.Remoting.CrediwareSecurityRemoteProxy" />
+                <!-- End of Crediware.BusinessRules.Implementation.CrediwareSecurity -->
+
+                <!-- Securitycontrols -->
+
+                <!-- Crediware.BusinessRules.Implementation.CrediwareTools -->
+                <add name="Crediware.Host.Tools" assembly="Crediware.BusinessRules.Implementation.dll" type="Crediware.BusinessRules.Implementation.CrediwareTools" description="Hosting: Tools" />
+                <add name="Crediware.BusinessRules.Tools.Remote" assembly="Crediware.BusinessRules.Remoting.dll" uri="tcp://localhost:10080/crediware_br_tools.rem" type="Crediware.BusinessRules.Remoting.CrediwareToolsRemoteProxy" />
+                <!-- End of Crediware.BusinessRules.Implementation.CrediwareTools -->
+
+                <!-- transactions -->
+
+                <!-- Crediware.BusinessRules.Implementation.CrediwareWorkflow -->
+                <add name="Crediware.Host.Workflow" assembly="Crediware.BusinessRules.Implementation.dll" type="Crediware.BusinessRules.Implementation.CrediwareWorkflow" description="Hosting: CrediwareWorkflow" />
+                <add name="Crediware.BusinessRules.Workflow.Remote" assembly="Crediware.BusinessRules.Remoting.dll" uri="tcp://localhost:10080/crediware_br_workflow.rem" type="Crediware.BusinessRules.Remoting.WorkflowRemoteProxy" />
+                <!-- End of Crediware.BusinessRules.Implementation.CrediwareWorkflow -->
+
+                <!-- Crediware.BusinessRules.Implementation.Factory -->
+                <add name="Crediware.Host.Factory" assembly="Crediware.BusinessRules.Implementation.dll" type="Crediware.BusinessRules.Implementation.Factory" description="Hosting: CrediwareFactory" />
+                <add name="Crediware.BusinessRules.Factory.Remote" assembly="Crediware.BusinessRules.Remoting.dll" uri="tcp://localhost:10080/crediware_br_factory.rem" type="Crediware.BusinessRules.Remoting.FactoryRemoteProxy" />
+                <!-- End of Crediware.BusinessRules.Implementation.Factory -->
+
+                <!-- Crediware.BusinessRules.Implementation.RequestManager -->
+                <add name="Crediware.Host.Request" assembly="Crediware.BusinessRules.Implementation.dll" type="Crediware.BusinessRules.Implementation.RequestManager" description="Hosting: RequestManager" />
+                <add name="Crediware.BusinessRules.Request.Remote" assembly="Crediware.BusinessRules.Remoting.dll" uri="tcp://localhost:10080/crediware_br_request.rem" type="Crediware.BusinessRules.Remoting.RequestManagerRemoteProxy" />
+                <!-- End of Crediware.BusinessRules.Implementation.RequestManager -->
+
+                <!-- Crediware.BusinessRules.Implementation.RequestSubStepManager -->
+                <add name="Crediware.Host.RequestSubStep" assembly="Crediware.BusinessRules.Implementation.dll" type="Crediware.BusinessRules.Implementation.RequestSubStepManager" description="Hosting: RequestSubStepManager" />
+                <add name="Crediware.BusinessRules.RequestSubStep.Remote" assembly="Crediware.BusinessRules.Remoting.dll" uri="tcp://localhost:10080/crediware_br_requestsubstep.rem" type="Crediware.BusinessRules.Remoting.RequestSubStepManagerRemoteProxy" />
+                <!-- End of Crediware.BusinessRules.Implementation.RequestSubStepManager -->
+
+                <!-- Crediware.Diagnostics.Remoting.Server.RemotingServerConsumer -->
+                <add name="Crediware.Host.Diagnostics" assembly="Crediware.Diagnostics.Remoting.Server.dll" type="Crediware.Diagnostics.Remoting.Server.RemotingServerConsumer" description="Hosting: Diagnostics" />
+                <!-- End of Crediware.Diagnostics.Remoting.Server.RemotingServerConsumer -->
+
+                <!-- Crediware Crediware.Workflow.Implementation.Factory -->
+                <add name="Workflow.Factory" assembly="Crediware.Workflow.Implementation.dll" type="Crediware.Workflow.Implementation.Factory" description="Implementa Crediware.Workflow.IEngineFactory" />
+                <!-- End of Crediware.Workflow.Implementation.Factory -->
+
+            </assemblies>
+        </AssembliesSettings>
+        <FactorySettings>
+            <factories>
+                <!-- sin remoting-->
+
+                <add name="Crediware.DataAccess" assembly="DataAccess.Factory" />
+                <add name="Crediware.Workflow" assembly="Workflow.Factory" />
+                <add name="Crediware.Security" assembly="Security.Factory" />
+                <add name="Crediware.BusinessRules" assembly="BusinessRules.Factory" />
+                <add name="SmartOpen.Common" assembly="SmartOpen.Common.Factory" />
+                <add name="SmartOpen.Plasticos" assembly="SmartOpen.Plasticos.Factory" />
+                <add name="SmartOpen.Promociones" assembly="SmartOpen.Promociones.Factory" />
+                <add name="SmartOpen.PromoXPuntos" assembly="SmartOpen.PromoXPuntos.Factory" />
+                <add name="SmartOpen.Tablas" assembly="SmartOpen.Tablas.Factory" />
+                <add name="SmartOpen.Bajas" assembly="SmartOpen.Bajas.Factory" />
+                <add name="SmartOpen.Comercios" assembly="SmartOpen.Comercios.Factory" />
+                <add name="SmartOpen.Contabilidad" assembly="SmartOpen.Contabilidad.Factory" />
+                <add name="SmartOpen.Conciliacion" assembly="SmartOpen.Conciliacion.Factory" />
+
+            </factories>
+        </FactorySettings>
+        <RemotingSettings>
+            <channels>
+                <add name="crediware_channel" enabled="true" type="tcp" port="10080" ensureSecurity="false"/>
+                <add name="smartopen_channel" enabled="true" type="tcp" port="10081" ensureSecurity="false"/>
+                <add name="custom_channel" enabled="true" type="tcp" port="10082" ensureSecurity="false"/>
+            </channels>
+            <objects>
+                <!-- Crediware -->
+                <add enabled="true" channel="crediware_channel" assembly="Crediware.Host.Entities" name="crediware_br_entities.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="crediware_channel" assembly="Crediware.Host.Basket" name="crediware_br_basket.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="crediware_channel" assembly="Crediware.Host.Factory" name="crediware_br_factory.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="crediware_channel" assembly="Crediware.Host.Workflow" name="crediware_br_workflow.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="crediware_channel" assembly="Crediware.Host.Request" name="crediware_br_request.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="crediware_channel" assembly="Crediware.Host.RequestSubStep" name="crediware_br_requestsubstep.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="crediware_channel" assembly="Crediware.Host.Diagnostics" name="crediware_diagnostics.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="crediware_channel" assembly="Crediware.Host.Tools" name="crediware_br_tools.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="crediware_channel" assembly="Crediware.Host.Security" name="crediware_br_security.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="crediware_channel" assembly="Crediware.Host.Facilities" name="crediware_br_facilities.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="crediware_channel" assembly="Crediware.Host.Alerts" name="crediware_br_alerts.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="crediware_channel" assembly="Crediware.Host.Emails" name="crediware_br_emails.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="crediware_channel" assembly="Crediware.Host.Messages" name="crediware_br_messages.rem" objectMode="SingleCall"/>
+                <!-- End of Crediware -->
+
+                <!-- SmartOpen -->
+                <add enabled="true" channel="smartopen_channel" assembly="SmartOpen.Common.Factory" name="smartopen_common.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="smartopen_channel" assembly="SmartOpen.Plasticos.Factory" name="smartopen_plasticos.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="smartopen_channel" assembly="SmartOpen.Promociones.Factory" name="smartopen_promociones.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="smartopen_channel" assembly="SmartOpen.PromoXPuntos.Factory" name="smartopen_promoxpuntos.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="smartopen_channel" assembly="SmartOpen.Bajas.Factory" name="smartopen_bajas.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="smartopen_channel" assembly="SmartOpen.Tablas.Factory" name="smartopen_tablas.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="smartopen_channel" assembly="SmartOpen.Comercios.Factory" name="smartopen_comercios.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="smartopen_channel" assembly="SmartOpen.Contabilidad.Factory" name="smartopen_contabilidad.rem" objectMode="SingleCall"/>
+                <add enabled="true" channel="smartopen_channel" assembly="SmartOpen.Conciliacion.Factory" name="smartopen_conciliacion.rem" objectMode="SingleCall"/>
+                <!-- End of SmartOpen -->
+
+                <!-- Custom -->
+                <!-- End of Custom -->
+            </objects>
+        </RemotingSettings>
+        <CustomSettings>
+            <Settings>
+                <!--Crediware.DataAccess-->
+                <add name="DataAccess.Password.Value" value="Fs6bKOND" />
+                <!--<add name="DataAccess.Password.Value" value="L41mpl3Ch3" />-->
+                <add name="DataAccess.Password.Encrypted" value="false"/>
+                <add name="MailServiceInterval" value="10" />
+                <add name="SuperAccess.URL" value="http://tqarwswsvn46/saservice/saservice.asp" />
+                <add name="SuperAccess.UseUrl" value="false" />
+                <add name="SuperAccess.IP" value="localhost" />
+                <add name="SuperAccess.Port" value="5000" />
+                <add name="SecurityWS.URI" value="" />
+                <add name="VisaPuntosWS.Entidad" value="150" />
+                <add name="VisaPuntosWS.ConsultaPuntos.URI" value="http://127.0.0.1/visapuntos/consultapuntos.aspx" />
+                <add name="Cobis.ApplicationID" value="28" />
+                <add name="Cobis.Usuario" value="abmcomtc" />
+               <add name="Cobis.Clave" value="TESTER20" />
+                               <add name="Cobis.EndpointConsultaIdCobis" value="http://localhost/cobis/ConsultaIdCobisService.asmx" />
+                <add name="Cobis.EndpointConsultaCtaCte" value="http://localhost/cobis/CLConsultaCtaCteService.asmx" />
+                <add name="Cobis.EndpointConsultaProductos" value="http://localhost/cobis/CLConsultaCtaCteService.asmx" />
+                <add name="Cobis.EndpointConsultaGeneral" value="http://localhost/cobis/CLConsultaCtaCteService.asmx" />
+                <add name="Cobis.EndpointConsultaDirecciones" value="http://localhost/cobis/CLConsultaCtaCteService.asmx" />
+                <add name="Cobis.EndpointConsultaTelefonos" value="http://localhost/cobis/CLConsultaCtaCteService.asmx" />
+                <add name="Cobis.EndPointConsultaResponsables" value="http://localhost/cobis/ClConsultaCliEnteWSService.asmx" />
+                <add name="Cobis.EndPointConsultaEnteResponsables" value="http://localhost/cobis/ClConsultaCliEnteWSService.asmx" />
+            </Settings>
+        </CustomSettings>
+    </applicationSettings>
+</configuration>

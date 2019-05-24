@@ -1,0 +1,55 @@
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Test\bin\Debug\Test.exe.config
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Test\bin\Debug\Test.exe
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Test\bin\Debug\Test.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Test\obj\Debug\Test.Properties.Resources.resources
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Test\obj\Debug\Test.csproj.GenerateResource.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Test\obj\Debug\Test.exe
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Test\obj\Debug\Test.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Test\bin\Debug\Stoca.Log.dll
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Test\bin\Debug\Stoca.Log.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\references\Test.exe.config
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\references\Test.exe
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\references\Test.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Test\obj\Debug\Test.Properties.Resources.resources
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Test\obj\Debug\Test.csproj.GenerateResource.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Test\obj\Debug\Test.exe
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Test\obj\Debug\Test.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\references\Test.exe.config
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\references\Test.exe
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\references\Test.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\references\Test.exe.config
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\references\Test.exe
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\references\Test.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Test\obj\Debug\Test.Properties.Resources.resources
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Test\obj\Debug\Test.csproj.GenerateResource.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Test\obj\Debug\Test.exe
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Test\obj\Debug\Test.pdb
+C:\Users\dmontilla\Documents\Core de STOCA\references\Test.exe.config
+C:\Users\dmontilla\Documents\Core de STOCA\references\Test.exe
+C:\Users\dmontilla\Documents\Core de STOCA\references\Test.pdb
+C:\Users\dmontilla\Documents\Core de STOCA\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\dmontilla\Documents\Core de STOCA\Test\obj\Debug\Test.Properties.Resources.resources
+C:\Users\dmontilla\Documents\Core de STOCA\Test\obj\Debug\Test.csproj.GenerateResource.cache
+C:\Users\dmontilla\Documents\Core de STOCA\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\dmontilla\Documents\Core de STOCA\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\dmontilla\Documents\Core de STOCA\Test\obj\Debug\Test.exe
+C:\Users\dmontilla\Documents\Core de STOCA\Test\obj\Debug\Test.pdb
+C:\David\Github\Core\Core de STOCA\references\Test.exe.config
+C:\David\Github\Core\Core de STOCA\references\Test.exe
+C:\David\Github\Core\Core de STOCA\references\Test.pdb
+C:\David\Github\Core\Core de STOCA\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\David\Github\Core\Core de STOCA\Test\obj\Debug\Test.Properties.Resources.resources
+C:\David\Github\Core\Core de STOCA\Test\obj\Debug\Test.csproj.GenerateResource.cache
+C:\David\Github\Core\Core de STOCA\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\David\Github\Core\Core de STOCA\Test\obj\Debug\Test.csproj.CopyComplete
+C:\David\Github\Core\Core de STOCA\Test\obj\Debug\Test.exe
+C:\David\Github\Core\Core de STOCA\Test\obj\Debug\Test.pdb

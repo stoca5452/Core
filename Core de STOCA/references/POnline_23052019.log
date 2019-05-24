@@ -1,0 +1,186 @@
+Error en ejecucion
+	Type:System.Data.SqlClient.SqlException
+	Message:El procedimiento o la función 'EJEMPLO2' esperaba el parámetro '@Parametro3', que no se ha especificado.
+	Source:.Net SqlClient Data Provider
+	Traking id:35912612201951230251280754778057
+	Server:BOREAL_DESA2
+	UserMessage: El procedimiento o la función 'EJEMPLO2' esperaba el parámetro '@Parametro3', que no se ha especificado.
+	UserMessageExtended: 
+	Exception Data: 
+		HelpLink.ProdName = Microsoft SQL Server
+		HelpLink.ProdVer = 10.50.3720
+		HelpLink.EvtSrc = MSSQLServer
+		HelpLink.EvtID = 201
+		HelpLink.BaseHelpUrl = http://go.microsoft.com/fwlink
+		HelpLink.LinkId = 20476
+	Stack track: 
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en Stoca.DataAccess.Connection.GetDataSet(IDbCommand command) en C:\David\Github\Core\Core de STOCA\Stoca.DataAccess\Connection.cs:línea 526
+   en Test.Program.Main(String[] args) en C:\David\Github\Core\Core de STOCA\Test\Program.cs:línea 38
+
+IDbCommand Info EJEMPLO2; - [2] Parameters
+		Parametro1 = david
+		Parametro2 = 5
+Error en ejecucion
+	Type:System.Data.SqlClient.SqlException
+	Message:La función o el procedimiento EJEMPLO tiene demasiados argumentos.
+	Source:.Net SqlClient Data Provider
+	Traking id:35912612201951230251485054778057
+	Server:BOREAL_DESA2
+	UserMessage: La función o el procedimiento EJEMPLO tiene demasiados argumentos.
+	UserMessageExtended: 
+	Exception Data: 
+		HelpLink.ProdName = Microsoft SQL Server
+		HelpLink.ProdVer = 10.50.3720
+		HelpLink.EvtSrc = MSSQLServer
+		HelpLink.EvtID = 8144
+		HelpLink.BaseHelpUrl = http://go.microsoft.com/fwlink
+		HelpLink.LinkId = 20476
+	Stack track: 
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   en Stoca.DataAccess.Connection.GetDataSet(IDbCommand command) en C:\David\Github\Core\Core de STOCA\Stoca.DataAccess\Connection.cs:línea 526
+   en Test.Program.Main(String[] args) en C:\David\Github\Core\Core de STOCA\Test\Program.cs:línea 38
+
+IDbCommand Info EJEMPLO; - [2] Parameters
+		Parametro1 = david
+		Parametro2 = 5
+Error en ejecucion
+	Type:System.Data.SqlClient.SqlException
+	Message:Error al convertir el tipo de datos nvarchar a numeric.
+	Source:.Net SqlClient Data Provider
+	Traking id:35912612201901230401403954778057
+	Server:BOREAL_DESA2
+	UserMessage: Error al convertir el tipo de datos nvarchar a numeric.
+	UserMessageExtended: 
+	Exception Data: 
+		HelpLink.ProdName = Microsoft SQL Server
+		HelpLink.ProdVer = 10.50.3720
+		HelpLink.EvtSrc = MSSQLServer
+		HelpLink.EvtID = 8114
+		HelpLink.BaseHelpUrl = http://go.microsoft.com/fwlink
+		HelpLink.LinkId = 20476
+	Stack track: 
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   en Stoca.DataAccess.Connection.ExecuteDataReader(IDbCommand command) en C:\David\Github\Core\Core de STOCA\Stoca.DataAccess\Connection.cs:línea 552
+   en Test.Program.Main(String[] args) en C:\David\Github\Core\Core de STOCA\Test\Program.cs:línea 42
+
+IDbCommand Info EJEMPLO2; - [3] Parameters
+		Parametro1 = david
+		Parametro2 = 5
+		Parametro3 = null
+Error en ejecucion
+	Type:System.Data.SqlClient.SqlException
+	Message:Error al convertir el tipo de datos nvarchar a numeric.
+	Source:.Net SqlClient Data Provider
+	Traking id:35912612201903230403346854778057
+	Server:BOREAL_DESA2
+	UserMessage: Error al convertir el tipo de datos nvarchar a numeric.
+	UserMessageExtended: 
+	Exception Data: 
+		HelpLink.ProdName = Microsoft SQL Server
+		HelpLink.ProdVer = 10.50.3720
+		HelpLink.EvtSrc = MSSQLServer
+		HelpLink.EvtID = 8114
+		HelpLink.BaseHelpUrl = http://go.microsoft.com/fwlink
+		HelpLink.LinkId = 20476
+	Stack track: 
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   en System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   en System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   en Stoca.DataAccess.Connection.ExecuteDataReader(IDbCommand command) en C:\David\Github\Core\Core de STOCA\Stoca.DataAccess\Connection.cs:línea 552
+   en Test.Program.Main(String[] args) en C:\David\Github\Core\Core de STOCA\Test\Program.cs:línea 42
+
+IDbCommand Info EJEMPLO2; - [3] Parameters
+		Parametro1 = david
+		Parametro2 = 5
+		Parametro3 = null
+Error en ejecucion de objeto ExcecuteScalar 
+	Type:System.InvalidOperationException
+	Message:ExecuteScalar requiere una Connection abierta y disponible. El estado actual de la conexión es cerrada.
+	Source:System.Data
+	Traking id:35912612201954230454574654778057
+	Server:BOREAL_DESA2
+	UserMessage: ExecuteScalar requiere una Connection abierta y disponible. El estado actual de la conexión es cerrada.
+	UserMessageExtended: 
+	Stack track: 
+   en System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en Stoca.DataAccess.Connection.ExecuteScalar(IDbCommand command) en C:\David\Github\Core\Core de STOCA\Stoca.DataAccess\Connection.cs:línea 563
+
+IDbCommand Info EJEMPLO2; - [3] Parameters
+		Parametro1 = david
+		Parametro2 = 5
+		Parametro3 = 
+Error en ejecucion de objeto ExcecuteScalar 
+	Type:System.InvalidOperationException
+	Message:ExecuteScalar requiere una Connection abierta y disponible. El estado actual de la conexión es cerrada.
+	Source:System.Data
+	Traking id:35912612201956230456113854778057
+	Server:BOREAL_DESA2
+	UserMessage: ExecuteScalar requiere una Connection abierta y disponible. El estado actual de la conexión es cerrada.
+	UserMessageExtended: 
+	Stack track: 
+   en System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   en Stoca.DataAccess.Connection.ExecuteScalar(IDbCommand command) en C:\David\Github\Core\Core de STOCA\Stoca.DataAccess\Connection.cs:línea 563
+
+IDbCommand Info EJEMPLO2; - [3] Parameters
+		Parametro1 = david
+		Parametro2 = 5
+		Parametro3 = 

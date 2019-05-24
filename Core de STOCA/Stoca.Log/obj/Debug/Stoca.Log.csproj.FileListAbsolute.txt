@@ -1,0 +1,37 @@
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Stoca.Log\obj\Debug\Stoca.Log.csproj.CoreCompileInputs.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Stoca.Log\bin\Debug\Stoca.Log.dll
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Stoca.Log\bin\Debug\Stoca.Log.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Stoca.Log\obj\Debug\Stoca.Log.dll
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Stoca.Log\obj\Debug\Stoca.Log.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Stoca.Log\obj\Debug\Stoca.Log.csprojResolveAssemblyReference.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\references\Stoca.Log.dll
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\references\Stoca.Log.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Stoca.Log\obj\Debug\Stoca.Log.csproj.CopyComplete
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\references\Stoca.Log.dll
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\references\Stoca.Log.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.csprojResolveAssemblyReference.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.csproj.CoreCompileInputs.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.csproj.CopyComplete
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.dll
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\references\Stoca.Log.dll
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\references\Stoca.Log.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.csprojResolveAssemblyReference.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.csproj.CoreCompileInputs.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.csproj.CopyComplete
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.dll
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.pdb
+C:\Users\dmontilla\Documents\Core de STOCA\references\Stoca.Log.dll
+C:\Users\dmontilla\Documents\Core de STOCA\references\Stoca.Log.pdb
+C:\Users\dmontilla\Documents\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.csprojAssemblyReference.cache
+C:\Users\dmontilla\Documents\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.csproj.CoreCompileInputs.cache
+C:\Users\dmontilla\Documents\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.csproj.CopyComplete
+C:\Users\dmontilla\Documents\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.dll
+C:\Users\dmontilla\Documents\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.pdb
+C:\David\Github\Core\Core de STOCA\references\Stoca.Log.dll
+C:\David\Github\Core\Core de STOCA\references\Stoca.Log.pdb
+C:\David\Github\Core\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.csprojAssemblyReference.cache
+C:\David\Github\Core\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.csproj.CoreCompileInputs.cache
+C:\David\Github\Core\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.csproj.CopyComplete
+C:\David\Github\Core\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.dll
+C:\David\Github\Core\Core de STOCA\Stoca.Log\obj\Debug\Stoca.Log.pdb

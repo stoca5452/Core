@@ -1,0 +1,31 @@
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Stoca.Common\bin\Debug\Stoca.Common.dll
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Stoca.Common\bin\Debug\Stoca.Common.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Stoca.Common\obj\Debug\Stoca.Common.csprojResolveAssemblyReference.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Stoca.Common\obj\Debug\Stoca.Common.csproj.CoreCompileInputs.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Stoca.Common\obj\Debug\Stoca.Common.dll
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\Stoca.Common\obj\Debug\Stoca.Common.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\references\Stoca.Common.dll
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Core de STOCA\STOCA\references\Stoca.Common.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\references\Stoca.Common.dll
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\references\Stoca.Common.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Common\obj\Debug\Stoca.Common.csprojResolveAssemblyReference.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Common\obj\Debug\Stoca.Common.csproj.CoreCompileInputs.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Common\obj\Debug\Stoca.Common.dll
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Common\obj\Debug\Stoca.Common.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\references\Stoca.Common.dll
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\references\Stoca.Common.pdb
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Common\obj\Debug\Stoca.Common.csprojResolveAssemblyReference.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Common\obj\Debug\Stoca.Common.csproj.CoreCompileInputs.cache
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Common\obj\Debug\Stoca.Common.dll
+C:\Users\Personal\Documents\MEGA\Programacion Visual Studio\Proyectos en SVN\branches\Core de STOCA\Stoca.Common\obj\Debug\Stoca.Common.pdb
+C:\Users\dmontilla\Documents\Core de STOCA\references\Stoca.Common.dll
+C:\Users\dmontilla\Documents\Core de STOCA\references\Stoca.Common.pdb
+C:\Users\dmontilla\Documents\Core de STOCA\Stoca.Common\obj\Debug\Stoca.Common.csproj.CoreCompileInputs.cache
+C:\Users\dmontilla\Documents\Core de STOCA\Stoca.Common\obj\Debug\Stoca.Common.dll
+C:\Users\dmontilla\Documents\Core de STOCA\Stoca.Common\obj\Debug\Stoca.Common.pdb
+C:\David\Github\Core\Core de STOCA\references\Stoca.Common.dll
+C:\David\Github\Core\Core de STOCA\references\Stoca.Common.pdb
+C:\David\Github\Core\Core de STOCA\Stoca.Common\obj\Debug\Stoca.Common.csprojAssemblyReference.cache
+C:\David\Github\Core\Core de STOCA\Stoca.Common\obj\Debug\Stoca.Common.csproj.CoreCompileInputs.cache
+C:\David\Github\Core\Core de STOCA\Stoca.Common\obj\Debug\Stoca.Common.dll
+C:\David\Github\Core\Core de STOCA\Stoca.Common\obj\Debug\Stoca.Common.pdb
